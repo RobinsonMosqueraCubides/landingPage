@@ -180,7 +180,6 @@ section .content{
 .container .links{
     display: flex;
     justify-content: space-between;
-    padding: 16px;
     max-width: 1024px;
 }
 ul{
@@ -203,8 +202,8 @@ ul{
         display: flex;
         align-items: center;
         top: 0;
-        left: 0;
-        transform: translateX(-100%);
+        right: 0;
+        transform: translateY(-400%);
         transition: 0.3s;
     }
     .search{
@@ -214,7 +213,9 @@ ul{
         display: flex;
         flex-direction: column;
         background: none;
-        border-radius: 7px;
+        z-index: 2;
+        border: none;
+        margin-right: 15px;
     }
     .boton .linea{
         height: 2px;
@@ -226,7 +227,7 @@ ul{
         display: flex;
     }
     .links.active{
-        transform: translateX(300%);
+        transform: translateY(15%);
     }
 
     nav{
